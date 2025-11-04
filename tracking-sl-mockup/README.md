@@ -1,31 +1,43 @@
-# TrackinG SI - Mockup Interativo
+# TrackinG SI - Interactive Mockup
 
-Mockup web interativo para demonstração do **TrackinG SI**, produto da NG Solutions para vistorias técnicas em sites de telecomunicações.
+Interactive mockup for TrackinG SI inspection application by NG Solutions.
 
-## Sobre o Projeto
+## Overview
 
-Este é um protótipo navegável criado para apresentação visual do fluxo de trabalho. Todos os dados são mockados e nenhuma funcionalidade real é processada - o objetivo é demonstrar a experiência do usuário de forma realista.
+This is a fully navigable mockup of the TrackinG SI mobile application, showcasing the complete inspection execution flow with **9 screens**. All functionality is simulated with mock data - no real GPS, camera, or backend integration.
 
-## Stack Técnico
+## Technologies
 
-- **React 18** - Framework JavaScript
-- **Vite** - Build tool e dev server
-- **CSS3** - Estilos com Custom Properties
-- **JavaScript ES6+** - Lógica de navegação
+- React 18
+- Vite
+- CSS3 with custom animations
+- Mock data simulation
 
-## Cores (Manual de Marca NG Solutions)
+## Design System - NG Solutions
 
-- **Azul Primário:** `#42738d` - Elementos principais da interface
-- **Laranja Destaque:** `#f19f53` - CTAs e botões de ação
-- **Cinza Secundário:** `#bdbbbb` - Textos secundários
+### Colors
+- **Primary Blue:** `#42738d` - Main UI elements
+- **Orange Accent:** `#f19f53` - CTAs and action buttons
+- **Secondary Gray:** `#bdbbbb` - Secondary text
+- **Success:** `#4caf50`
+- **Warning:** `#ffc107`
+- **Error:** `#f44336`
 
-## Estrutura do Fluxo
+### Typography
+- Font: Roboto
+- Logo: "ng" symbol with orange dot
 
-1. **Splash Screen** (3s) - Logo TrackinG SI com animação
-2. **Lista de Vistorias** - 3 cards com estados diferentes
-3. **Questionário EPI** - Checklist de 6 equipamentos
-4. **Selfie com EPI** - Captura simulada com validações
-5. **Confirmação** - Retorna à lista com status atualizado
+## Complete Screen Flow (9 Screens)
+
+1. **Splash Screen** (3s auto-transition) - NG Solutions branding
+2. **Lista de Vistorias** - 3 mock inspections with status
+3. **Questionário EPI** - Safety checklist (6 items)
+4. **Selfie de Chegada** - Arrival selfie with validations
+5. **Check-in Geolocalização** - GPS verification with simulated map
+6. **Visão Geral** - Sequence overview (67 steps, 8 sections)
+7. **Passo Vistoria** - Step-by-step execution with camera
+8. **Preview Foto** - Photo validation (3 states)
+9. **Progresso** - Progress tracking and photo gallery
 
 ## Como Executar
 
@@ -42,49 +54,101 @@ npm run build
 
 O mockup estará disponível em `http://localhost:5173`
 
-## Dados Mockados
+## Navigation Flow
 
-### Vistorias
-- **VST-2024-089** - Torre Greenfield (APTA)
-- **VST-2024-090** - Rooftop Comercial (HORÁRIO COMERCIAL)
-- **VST-2024-091** - Torre Rural (BLOQUEADA)
+```
+Splash → List
+  ↓
+Select Inspection → EPI Questionnaire
+  ↓
+Selfie
+  ↓
+Check-in (GPS)
+  ↓
+Sequence Overview
+  ↓
+Step Execution (loop) ←→ Photo Preview
+  ↓
+(Every 8 steps) → Progress View
+  ↓
+Continue → Back to Step Execution
+  ↓
+Pause → Back to List (status: in progress)
+```
 
-### EPIs
-1. Capacete
-2. Colete Refletivo
-3. Botina de Segurança
-4. Óculos de Proteção
-5. Luvas
-6. Cinto de Segurança
+## Key Features
 
-## Funcionalidades Interativas
+### Screen 5: Check-in with Geolocation
+- Simulated map with site and user pins
+- Distance validation (45m from site)
+- GPS coordinates display
+- Modal for distant locations
+- Site information
 
-- Timer automático no splash screen
-- Click em cards de vistoria disponível
-- Bloqueio de vistorias sem pré-requisitos
-- Checklist interativo de EPIs
-- Simulação de captura de foto com flash
-- Validações mockadas na selfie
-- Navegação voltar funcional
-- Transições suaves entre telas
+### Screen 6: Sequence Overview
+- Global progress bar (0-100%)
+- 8 inspection sections with icons
+- 67 total steps
+- Collapsible sections
+- Estimated time: 90-150 minutes
 
-## Responsividade
+### Screen 7: Step Execution
+- Step indicator (X of 67)
+- Detailed instructions with checklist
+- Camera preview with 3x3 grid
+- Flash and brightness controls
+- Example photo modal
+- Add observation feature
+- "Not applicable" option
 
-Interface otimizada para viewport mobile (máximo 480px), centralizada em telas maiores.
+### Screen 8: Photo Validation
+- Progressive animated validations (focus, lighting, resolution)
+- 3 states: Success / Warning / Blocked
+- Contextual messages
+- Conditional actions
+- Improvement tips
 
-## Arquivos de Controle
+### Screen 9: Progress View
+- Statistics: 24/67 steps (36%), 45 min, 24 photos
+- Progress by section with mini-bars
+- Photo gallery (3x3 grid)
+- Click to enlarge photos
+- Registered observations
+- Continue or pause options
 
-- `.context/mockup-progress.json` - Progresso da implementação
-- `.context/mockup-structure.json` - Estrutura do projeto
+## Mock Data
 
-## Observações
+- **Inspections**: 3 sites with different statuses
+- **Steps**: 67 total (4 detailed mockups)
+- **Sections**: 8 inspection sections
+- **GPS**: Fixed coordinates near Av. Paulista
+- **Photos**: Emoji thumbnails
+- **Validations**: 3 states with animations
 
-- Este é um **mockup navegável**, não um aplicativo funcional
-- Dados são hardcoded, sem persistência real
-- Foco em fidelidade visual ao manual de marca NG Solutions
-- Logo sempre respeitando proporções (símbolo ng + ponto laranja)
+## Animations
+
+- Flash effect on photo capture
+- Progressive validation checks
+- Toast notifications
+- Modal slide-in/out
+- Progress bar transitions
+- Map pin bounce effects
+
+## Documentation Files
+
+- `mockup-progress.json` - Implementation details
+- `mockup-structure.json` - Architecture guide
+- `README.md` - This file
+
+## Notes
+
+- **This is a mockup** - no real integrations
+- Data is not persisted (refresh resets state)
+- GPS and camera are simulated
+- Perfect for presentations and user testing
+- Fully responsive mobile design (480px max-width)
 
 ---
 
 **TrackinG SI** by NG Solutions
-# tracking-sl
+Version 1.0.0 - November 2025

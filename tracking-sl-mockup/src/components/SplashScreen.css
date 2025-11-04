@@ -14,18 +14,18 @@
 }
 
 .logo-container {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* Logo NG - símbolo ng com ponto laranja */
 .ng-logo {
   position: relative;
   display: inline-block;
-  font-size: 120px;
+  font-size: 80px;
   font-weight: bold;
   color: #ffffff;
   font-family: var(--font-family);
-  letter-spacing: -8px;
+  letter-spacing: -6px;
 }
 
 .ng-text {
@@ -35,10 +35,10 @@
 
 .ng-dot {
   position: absolute;
-  top: -8px;
-  right: -12px;
-  width: 24px;
-  height: 24px;
+  top: -6px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
   background-color: var(--ng-laranja-destaque);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
@@ -46,10 +46,10 @@
 
 .product-name {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
 }
 
 .g-uppercase {
@@ -58,7 +58,7 @@
 
 .product-subtitle {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.5px;
 }

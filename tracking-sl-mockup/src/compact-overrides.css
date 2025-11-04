@@ -1,0 +1,348 @@
+/* COMPACT OVERRIDES - Reduz espaçamentos gerais para evitar scroll */
+
+/* QuestionarioEPI */
+.questionario-page .content-area {
+  padding: 64px 12px 90px 12px !important;
+}
+
+.questionario-page .questionario-header {
+  margin-bottom: 16px !important;
+}
+
+.questionario-page .questionario-title {
+  font-size: 18px !important;
+  margin-bottom: 6px !important;
+}
+
+.questionario-page .questionario-subtitle {
+  font-size: 13px !important;
+}
+
+.questionario-page .equipamentos-list {
+  gap: 10px !important;
+}
+
+.equipamento-item {
+  padding: 10px !important;
+}
+
+.equipamento-nome {
+  font-size: 14px !important;
+}
+
+.equipamento-buttons {
+  gap: 6px !important;
+}
+
+.equipamento-btn {
+  padding: 6px 14px !important;
+  font-size: 12px !important;
+}
+
+/* SelfiePage */
+.selfie-page .content-area {
+  padding: 64px 12px 100px 12px !important;
+}
+
+.selfie-header h1 {
+  font-size: 18px !important;
+  margin-bottom: 6px !important;
+}
+
+.selfie-header p {
+  font-size: 13px !important;
+}
+
+.camera-area {
+  margin-bottom: 16px !important;
+}
+
+.dicas {
+  margin-top: 16px !important;
+}
+
+.dicas-title {
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+}
+
+.dicas-list li {
+  font-size: 12px !important;
+  margin-bottom: 6px !important;
+}
+
+/* CheckIn */
+.checkin-page .content-area {
+  padding: 66px 12px 100px 12px !important;
+}
+
+.map-container {
+  margin-bottom: 16px !important;
+}
+
+.validation-card {
+  padding: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+.validation-main {
+  font-size: 14px !important;
+}
+
+.validation-status {
+  font-size: 12px !important;
+}
+
+.site-info-card {
+  padding: 14px !important;
+}
+
+.site-info-title {
+  font-size: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+.info-row {
+  padding: 8px 0 !important;
+}
+
+.info-value {
+  font-size: 13px !important;
+}
+
+/* VisaoGeralSequencia */
+.content-area-vistoria {
+  padding: 72px 12px 150px 12px !important;
+}
+
+.progresso-global {
+  padding: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.progresso-title {
+  font-size: 16px !important;
+}
+
+.progresso-percentual {
+  font-size: 20px !important;
+}
+
+.progresso-texto {
+  font-size: 13px !important;
+}
+
+.site-info-card-vistoria {
+  padding: 12px !important;
+  margin-bottom: 16px !important;
+}
+
+.site-name {
+  font-size: 14px !important;
+  margin-bottom: 6px !important;
+}
+
+.secoes-title {
+  font-size: 14px !important;
+  margin-bottom: 10px !important;
+}
+
+.secao-item {
+  margin-bottom: 8px !important;
+}
+
+.secao-header {
+  padding: 12px !important;
+}
+
+.secao-nome {
+  font-size: 14px !important;
+}
+
+.secao-passos {
+  font-size: 11px !important;
+}
+
+/* PassoVistoria */
+.content-passo {
+  padding: 66px 12px 160px 12px !important;
+}
+
+.instrucao-area {
+  margin-bottom: 16px !important;
+}
+
+.instrucao-icone {
+  font-size: 36px !important;
+  margin-bottom: 8px !important;
+}
+
+.instrucao-titulo {
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.instrucao-texto {
+  font-size: 13px !important;
+}
+
+.checklist-card {
+  padding: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.checklist-titulo {
+  font-size: 12px !important;
+  margin-bottom: 8px !important;
+}
+
+.checklist-item {
+  padding: 6px 0 !important;
+}
+
+.checklist-texto {
+  font-size: 13px !important;
+}
+
+.dica-card {
+  padding: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.dica-texto {
+  font-size: 12px !important;
+}
+
+.camera-preview-area {
+  margin-bottom: 12px !important;
+}
+
+.footer-actions-secundarias {
+  margin-bottom: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+/* PreviewFoto */
+.content-preview {
+  padding: 66px 12px 140px 12px !important;
+}
+
+.preview-container {
+  margin-bottom: 16px !important;
+}
+
+.validacoes-container {
+  padding: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.validacoes-titulo {
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.validacao-item-preview {
+  padding: 10px !important;
+  gap: 10px !important;
+}
+
+.validacao-label-preview {
+  font-size: 13px !important;
+}
+
+.mensagem-contextual {
+  padding: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.mensagem-texto {
+  font-size: 13px !important;
+  padding-top: 6px !important;
+}
+
+.dicas-melhoria {
+  padding: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+/* ProgressoVistoria */
+.content-area-progresso {
+  padding: 72px 12px 140px 12px !important;
+}
+
+.resumo-card {
+  padding: 16px !important;
+  margin-bottom: 12px !important;
+}
+
+.resumo-titulo {
+  font-size: 16px !important;
+  margin-bottom: 14px !important;
+}
+
+.stats-grid {
+  gap: 12px !important;
+  margin-bottom: 14px !important;
+}
+
+.stat-item {
+  padding: 12px !important;
+}
+
+.stat-valor {
+  font-size: 20px !important;
+}
+
+.stat-label {
+  font-size: 11px !important;
+}
+
+.secoes-progresso-card {
+  padding: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.secoes-progresso-titulo {
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.secao-progresso-item {
+  padding: 10px !important;
+  gap: 10px !important;
+}
+
+.secao-progresso-nome {
+  font-size: 13px !important;
+}
+
+.secao-progresso-stats {
+  font-size: 11px !important;
+}
+
+.fotos-card {
+  padding: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.fotos-titulo {
+  font-size: 14px !important;
+}
+
+.observacoes-card {
+  padding: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.observacoes-titulo {
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+.observacao-item {
+  padding: 10px !important;
+}
+
+.observacao-texto {
+  font-size: 12px !important;
+}

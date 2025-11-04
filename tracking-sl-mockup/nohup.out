@@ -9,3 +9,21 @@
 12:20:59 PM [vite] vite.config.js changed, restarting server...
 12:20:59 PM [vite] server restarted.
 12:24:43 PM [vite] (client) page reload index.html
+12:50:09 PM [vite] (client) hmr update /src/App.jsx
+12:50:15 PM [vite] (client) hmr update /src/App.jsx
+12:50:31 PM [vite] (client) hmr update /src/App.jsx
+12:50:43 PM [vite] (client) hmr update /src/App.jsx
+12:59:27 PM [vite] (client) hmr update /src/components/SplashScreen.jsx
+12:59:56 PM [vite] (client) hmr update /src/components/SplashScreen.css
+1:00:14 PM [vite] (client) hmr update /src/components/SplashScreen.jsx
+1:00:22 PM [vite] (client) hmr update /src/components/SplashScreen.css
+1:00:49 PM [vite] (client) page reload index.html
+1:00:49 PM [vite] (client) page reload index.html
+1:01:44 PM [vite] (client) hmr update /src/components/SplashScreen.css
+1:02:07 PM [vite] (client) hmr update /src/components/VistoriasList.css
+1:02:19 PM [vite] (client) hmr update /src/components/VistoriasList.css
+1:02:27 PM [vite] (client) hmr update /src/App.css
+1:02:33 PM [vite] (client) hmr update /src/App.css
+1:02:40 PM [vite] (client) hmr update /src/App.css
+1:02:46 PM [vite] (client) hmr update /src/App.css
+1:03:34 PM [vite] (client) page reload src/main.jsx

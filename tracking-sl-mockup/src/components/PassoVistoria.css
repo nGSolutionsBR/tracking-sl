@@ -1,0 +1,581 @@
+.passo-vistoria-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Header compacto */
+.header-passo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: var(--ng-azul-primario);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.header-info {
+  flex: 1;
+  text-align: center;
+}
+
+.passo-numero {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-menu {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-weight: 700;
+}
+
+/* Barra de progresso fino */
+.progresso-fino {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 99;
+}
+
+.progresso-fino-preenchimento {
+  height: 100%;
+  background-color: var(--ng-laranja-destaque);
+  transition: width 0.5s ease;
+}
+
+/* Flash effect */
+.flash-effect-camera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  animation: flashAnimation 0.3s ease;
+  pointer-events: none;
+}
+
+@keyframes flashAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Conteúdo scrollável */
+.content-passo {
+  padding: 76px 16px 180px 16px;
+  overflow-y: auto;
+}
+
+/* Área de instrução */
+.instrucao-area {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.instrucao-icone {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.instrucao-titulo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ng-azul-primario);
+  margin-bottom: 12px;
+}
+
+.instrucao-texto {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Checklist */
+.checklist-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.checklist-titulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.checklist-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.checklist-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--color-sucesso);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.checklist-texto {
+  font-size: 14px;
+  color: #212121;
+}
+
+/* Dica contextual */
+.dica-card {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-left: 4px solid var(--ng-laranja-destaque);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.dica-icone {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.dica-texto {
+  font-size: 13px;
+  color: #5d4037;
+  line-height: 1.5;
+}
+
+/* Link ver exemplo */
+.btn-link {
+  display: block;
+  text-align: center;
+  color: var(--ng-azul-primario);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-link:hover {
+  opacity: 0.7;
+}
+
+/* Preview da câmera */
+.camera-preview-area {
+  margin-bottom: 16px;
+}
+
+.camera-frame-passo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.camera-placeholder-passo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+}
+
+.placeholder-icon-camera {
+  font-size: 48px;
+  opacity: 0.5;
+  margin-bottom: 12px;
+}
+
+.placeholder-text-camera {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+/* Grid de enquadramento */
+.camera-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.grid-line {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.grid-v1,
+.grid-v2 {
+  width: 1px;
+  height: 100%;
+  top: 0;
+}
+
+.grid-v1 {
+  left: 33.33%;
+}
+
+.grid-v2 {
+  left: 66.66%;
+}
+
+.grid-h1,
+.grid-h2 {
+  height: 1px;
+  width: 100%;
+  left: 0;
+}
+
+.grid-h1 {
+  top: 33.33%;
+}
+
+.grid-h2 {
+  top: 66.66%;
+}
+
+/* Controles de câmera */
+.camera-controls {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.control-icon {
+  font-size: 20px;
+  color: var(--ng-azul-primario);
+}
+
+.control-label {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Rodapé com ações */
+.footer-passo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 16px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.footer-actions-secundarias {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.btn-link-small {
+  background: none;
+  border: none;
+  color: var(--ng-azul-primario);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-link-small:hover {
+  opacity: 0.7;
+}
+
+/* Botão de captura circular */
+.btn-captura {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--ng-laranja-destaque);
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(241, 159, 83, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+
+.btn-captura:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(241, 159, 83, 0.5);
+}
+
+.btn-captura:active {
+  transform: scale(0.95);
+}
+
+.captura-icon {
+  font-size: 32px;
+}
+
+/* Modal de exemplo */
+.modal-exemplo {
+  max-width: 90%;
+  width: 400px;
+}
+
+.modal-header-exemplo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.modal-header-exemplo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ng-azul-primario);
+}
+
+.btn-fechar {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.btn-fechar:hover {
+  color: #666;
+}
+
+.exemplo-imagem {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mock-exemplo-foto {
+  text-align: center;
+}
+
+.exemplo-icone {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.exemplo-label {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Textarea de observação */
+.observacao-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: #212121;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.2s ease;
+}
+
+.observacao-textarea:focus {
+  outline: none;
+  border-color: var(--ng-azul-primario);
+}
+
+.observacao-textarea::placeholder {
+  color: #999;
+}
+
+/* Toast de informação */
+.toast-info {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--ng-azul-primario);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1001;
+  animation: toastSlide 0.3s ease;
+}
+
+@keyframes toastSlide {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal base (reutilizado) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.modal-body {
+  margin-bottom: 24px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions .btn-secondary,
+.modal-actions .btn-primary {
+  flex: 1;
+}

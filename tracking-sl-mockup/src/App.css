@@ -84,12 +84,12 @@ body {
 /* Botões primários */
 .btn-primary {
   width: 100%;
-  padding: 16px 24px;
+  padding: 12px 20px;
   background-color: var(--ng-laranja-destaque);
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -118,12 +118,12 @@ body {
 /* Botões secundários */
 .btn-secondary {
   width: 100%;
-  padding: 16px 24px;
+  padding: 12px 20px;
   background-color: transparent;
   color: var(--ng-azul-primario);
   border: 2px solid var(--ng-azul-primario);
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -143,11 +143,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: 56px;
   background-color: var(--ng-azul-primario);
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
@@ -170,7 +170,7 @@ body {
   flex: 1;
   text-align: center;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -181,7 +181,7 @@ body {
   left: 0;
   right: 0;
   background-color: #ffffff;
-  padding: 16px;
+  padding: 12px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
