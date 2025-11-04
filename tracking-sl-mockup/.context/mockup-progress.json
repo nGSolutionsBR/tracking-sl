@@ -1,0 +1,63 @@
+{
+  "projeto": "TrackinG SI - Mockup Interativo",
+  "versao": "1.0.0",
+  "progresso": {
+    "fase1": {
+      "nome": "Fundação",
+      "status": "completa",
+      "itens": [
+        "Estrutura HTML base criada",
+        "Variáveis CSS com cores do manual NG Solutions",
+        "Sistema de navegação entre telas implementado",
+        "Splash screen com logo e animação"
+      ]
+    },
+    "fase2": {
+      "nome": "Lista de Vistorias",
+      "status": "completa",
+      "itens": [
+        "Tela de vistorias com 3 cards mockados",
+        "Estados visuais distintos (apta, parcial, bloqueada)",
+        "Tags e badges estilizadas conforme manual",
+        "Interatividade nos cards implementada"
+      ]
+    },
+    "fase3": {
+      "nome": "Questionário EPI",
+      "status": "completa",
+      "itens": [
+        "Checklist de EPIs interativo",
+        "Contador dinâmico",
+        "Estado do botão baseado em seleção",
+        "Navegação funcional"
+      ]
+    },
+    "fase4": {
+      "nome": "Selfie",
+      "status": "completa",
+      "itens": [
+        "Simulação de captura com efeito flash",
+        "Preview com validações mockadas",
+        "Fluxo de refazer ou confirmar",
+        "Mensagem de sucesso"
+      ]
+    },
+    "fase5": {
+      "nome": "Refinamento",
+      "status": "em_progresso",
+      "itens": [
+        "Transições CSS entre telas (pendente)",
+        "Ajustes de responsividade (pendente)",
+        "Teste do fluxo completo (pendente)",
+        "Validação visual contra manual de marca (pendente)"
+      ]
+    }
+  },
+  "proximos_passos": [
+    "Testar o mockup executando npm run dev",
+    "Verificar transições entre telas",
+    "Validar cores do manual de marca",
+    "Testar responsividade mobile",
+    "Ajustes finais se necessário"
+  ]
+}

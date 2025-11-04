@@ -1,0 +1,121 @@
+.questionario-epi {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.questionario-header {
+  padding: 24px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 64px;
+}
+
+.progress-indicator {
+  font-size: 12px;
+  color: var(--ng-azul-primario);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.questionario-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ng-azul-primario);
+  margin-bottom: 8px;
+}
+
+.questionario-subtitle {
+  font-size: 14px;
+  color: var(--ng-cinza-secundario);
+}
+
+/* Lista de EPIs */
+.epis-list {
+  padding: 16px;
+  padding-bottom: 140px; /* Espaço para o rodapé fixo */
+}
+
+.epi-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  min-height: 72px;
+}
+
+.epi-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.epi-item.epi-selected {
+  background-color: #e8f5e9;
+  border-color: var(--color-sucesso);
+}
+
+.epi-icon {
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.epi-item.epi-selected .epi-icon {
+  background-color: #c8e6c9;
+}
+
+.epi-info {
+  flex: 1;
+}
+
+.epi-nome {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.epi-checkbox {
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--ng-cinza-secundario);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.epi-item.epi-selected .epi-checkbox {
+  background-color: var(--color-sucesso);
+  border-color: var(--color-sucesso);
+}
+
+.check-mark {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Rodapé */
+.contador {
+  text-align: center;
+  font-size: 14px;
+  color: var(--ng-azul-primario);
+  font-weight: 600;
+  margin-bottom: 12px;
+}

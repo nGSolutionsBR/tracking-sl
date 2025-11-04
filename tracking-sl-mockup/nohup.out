@@ -1,0 +1,11 @@
+
+> tracking-sl-mockup@0.0.0 dev
+> vite --host 10.0.5.2 --port 3112
+
+
+  VITE v7.1.12  ready in 234 ms
+
+  ➜  Network: http://10.0.5.2:3112/
+12:20:59 PM [vite] vite.config.js changed, restarting server...
+12:20:59 PM [vite] server restarted.
+12:24:43 PM [vite] (client) page reload index.html

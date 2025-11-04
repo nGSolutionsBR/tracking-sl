@@ -1,0 +1,45 @@
+{
+  "estrutura": {
+    "src": {
+      "App.jsx": "Componente principal com navegação e dados mockados",
+      "App.css": "Estilos globais e variáveis CSS do manual de marca NG Solutions",
+      "index.css": "Reset CSS básico",
+      "main.jsx": "Entry point da aplicação",
+      "components": {
+        "SplashScreen.jsx": "Tela inicial com logo TrackinG SI",
+        "SplashScreen.css": "Estilos e animações do splash screen",
+        "VistoriasList.jsx": "Lista de vistorias com 3 cards mockados",
+        "VistoriasList.css": "Estilos dos cards de vistoria",
+        "QuestionarioEPI.jsx": "Checklist interativo de EPIs",
+        "QuestionarioEPI.css": "Estilos do questionário",
+        "SelfiePage.jsx": "Tela de captura de selfie",
+        "SelfiePage.css": "Estilos da página de selfie"
+      }
+    },
+    ".context": {
+      "mockup-progress.json": "Registro do progresso de implementação",
+      "mockup-structure.json": "Este arquivo - estrutura do projeto"
+    }
+  },
+  "cores_ng_solutions": {
+    "azul_primario": "#42738d",
+    "laranja_destaque": "#f19f53",
+    "cinza_secundario": "#bdbbbb"
+  },
+  "dados_mockados": {
+    "vistorias": 3,
+    "epis": 6,
+    "fluxo": "splash → lista → questionário → selfie → confirmação"
+  },
+  "tecnologias": [
+    "React 18",
+    "Vite",
+    "CSS3 (Custom Properties)",
+    "JavaScript (ES6+)"
+  ],
+  "assets_necessarios": {
+    "logo": "Implementado via CSS (ng com ponto laranja)",
+    "icones": "Emojis Unicode para simplicidade",
+    "imagens": "Não necessário - mockup visual apenas"
+  }
+}

@@ -1,0 +1,252 @@
+.selfie-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.selfie-header {
+  padding: 24px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 64px;
+}
+
+.selfie-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ng-azul-primario);
+  margin-bottom: 8px;
+}
+
+.selfie-subtitle {
+  font-size: 14px;
+  color: var(--ng-cinza-secundario);
+  line-height: 1.4;
+}
+
+/* Área da câmera */
+.camera-area {
+  padding: 24px 16px;
+  padding-bottom: 140px;
+}
+
+.camera-frame {
+  background-color: #212121;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.camera-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.placeholder-icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.placeholder-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0 24px;
+}
+
+/* Guias de enquadramento */
+.frame-guides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.guide {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--ng-laranja-destaque);
+}
+
+.guide.top-left {
+  top: 20px;
+  left: 20px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.guide.top-right {
+  top: 20px;
+  right: 20px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.guide.bottom-left {
+  bottom: 20px;
+  left: 20px;
+  border-right: none;
+  border-top: none;
+}
+
+.guide.bottom-right {
+  bottom: 20px;
+  right: 20px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Preview da foto */
+.photo-preview {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image {
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mock-selfie {
+  text-align: center;
+  color: #ffffff;
+}
+
+.selfie-icon {
+  font-size: 120px;
+  margin-bottom: 16px;
+}
+
+.selfie-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Validações */
+.validacoes {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.validacoes-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ng-azul-primario);
+  margin-bottom: 12px;
+}
+
+.validacao-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.validacao-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--ng-cinza-secundario);
+  border: 2px solid var(--ng-cinza-secundario);
+}
+
+.validacao-icon.validacao-ok {
+  background-color: var(--color-sucesso);
+  color: #ffffff;
+  border-color: var(--color-sucesso);
+}
+
+.validacao-label {
+  font-size: 14px;
+  color: #424242;
+}
+
+/* Dicas */
+.dicas {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #fff8e1;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-alerta);
+}
+
+.dicas-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f57c00;
+  margin-bottom: 8px;
+}
+
+.dicas-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.dicas-list li {
+  font-size: 13px;
+  color: #424242;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* Botão de câmera */
+.btn-camera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.camera-icon {
+  font-size: 24px;
+}
+
+/* Ações do preview */
+.preview-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.preview-actions .btn-secondary,
+.preview-actions .btn-primary {
+  flex: 1;
+}
+
+/* Efeito de flash */
+.flash-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 150ms ease-out;
+}
+
+.flash-effect.flash-active {
+  opacity: 0.9;
+}
